@@ -1,0 +1,38 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: fantasy, sans-serif;
+	background: #1f1c1c;
+	letter-spacing: 4px;
+	font-size: 1.1em
+}
+
+/* ========== COUNT DOWN ========== */
+.countdownContainer{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform : translateX(-50%) translateY(-50%);
+	text-align: center;
+	background: #000000;
+	color: darkgray;
+	padding: 20px;
+	box-shadow: 4px 4px 12px 1px #ccc;
+	border-radius: 13px;
+	font-size: 15px;
+}
+
+.info {
+	font-size: 75px;
+}
+
+/* ========== CLOCK ========== */
+#clock {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	text-align: center;
+	color: #957f7f;
+	font-size: 100px;
+}

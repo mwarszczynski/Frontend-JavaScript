@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Counter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- ========== own styles ========== -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- ========== Count down ========== -->
+	<table class="countdownContainer">
+		<tr class="info">
+			<td colspan="4">Silvestre Countdown</td>
+		</tr>
+		<tr class="info">
+			<td id="days">120</td>
+			<td id="hours">4</td>
+			<td id="minutes">12</td>
+			<td id="seconds">22</td>
+		</tr>
+		<tr>
+			<td>Days</td>
+			<td>Hours</td>
+			<td>Minutes</td>
+			<td>Seconds</td>
+		</tr>
+	</table><!-- /table -->
+	<!-- ========== CLOCK ========== -->
+	<div onload="CounterOn()">
+		<div id="txt"></div>
+	</div>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>

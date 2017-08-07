@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>To Do App</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- own styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fnts -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Sedgwick+Ave" rel="stylesheet"></head>
+<body>
+
+  <div class="container">
+    <h2 class="cameleon-txt">Simple to do list</h2>
+    <p class="cameleon-txt">Click button to add new task, double click will remove task</p>
+
+    <form name="toDoList">
+      <input type="text" name="ListItem" required>
+    </form>
+
+    <div id="button">Add</div>
+  </div>
+
+  <div class="container">
+    <h4>Commisioned tasks: </h4>
+    <ol>
+        <li>Learn C++</li>
+    </ol>
+  </div>
+
+
+  <div class="container">
+    <form class="fixed-form">
+      <label for="text-color-picker">Kolor tekstu: </label>
+      <input type="color" name="text-color" id="text-color-picker"><br>
+      <label for="text-color-picker">Kolor tla: </label>
+      <input type="color" name="background-color">
+    </form>
+  </div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- scripts jquery -->
+  <script src="js/Todo.js"></script>
+  <!-- vanilla js -->
+  <script src="js/vanilla.js"></script>
+</body>
+</html>

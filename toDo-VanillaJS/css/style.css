@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #CCBC2F;
+  font-family: 'Indie Flower', cursive;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 25px;
+  width: 400px;
+  background: #FFC642;
+  border-radius: 15px;
+}
+
+form, #button {
+  display: inline-block;
+}
+
+input {
+  border: 1px solid black;
+  padding: 5px 20px 5px 5px;
+}
+
+h1 ,h2 ,h3 ,h4 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#button {
+  background: red;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+#button:hover, li:hover {
+  cursor: pointer;
+}
+
+ol li {
+  padding: 7px;
+  color: #000;
+}
+
+ol li:nth-child(odd) {
+  background: #CCB70A;
+}

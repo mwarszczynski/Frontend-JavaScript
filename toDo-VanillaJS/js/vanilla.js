@@ -6,7 +6,31 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-// color picker
+// watch
+function beginWatch() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+  m = checkDetails(m);
+  s = checkDetails(s);
+
+  document.getElementById('watch').innerHTML = h + ":" + m + ":" + s;
+  var time = setTimeout(beginWatch, 500);
+
+};
+
+function checkDetails(i) {
+  if(i < 10) {
+    i = '0' + i;
+  }
+  return i;
+}
+
+beginWatch()
+
+// color picker  - IN WORKING ===================================
 function initPicker() {
   textColor = document.querySelector('text-color-picker');
   textColor.addEventListener('change', TextColorChange, false);
@@ -14,7 +38,7 @@ function initPicker() {
   backgroundColor = document.querySelector('background-color-picker');
   backgroundColor.addEventListener('change', BackgroundColorChange, false);
 }
-// IN WORKING ===================================
+
 function textColorChange() {
   var color = textColor.value;
 

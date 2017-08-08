@@ -18,6 +18,16 @@ body {
   border-radius: 15px;
 }
 
+.nav {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: gold;
+  font-size: 25px;
+}
+
 form, #button {
   display: inline-block;
 }

@@ -2,65 +2,71 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
-  background: #CCBC2F;
-  font-family: 'Indie Flower', cursive;
+  background: #7698A1;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
 }
 
 .container {
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 25px;
   width: 400px;
-  background: #FFC642;
-  border-radius: 15px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: #0F1314;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  overflow: hidden;
 }
 
-.nav {
+h1 {
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: gold;
-  font-size: 25px;
+  margin-bottom: 25px;
+  font-weight: 600;
 }
 
-form, #button {
-  display: inline-block;
+#new_task, #add_task, #removeAll, #clear {
+  float: left;
+  width: 100%;
+  margin-bottom: 17px;
+  letter-spacing: 1px;
+}
+
+#new_task {
+  padding: 5px;
+}
+
+#clear {
+  text-align: center;
+  border-bottom: 1px dashed #fff;
 }
 
 input {
-  border: 1px solid black;
-  padding: 5px 20px 5px 5px;
+  -moz-box-shadow: -1px -1px 6px #b0a6b0;
+  -webkit-box-shadow: -1px -1px 6px #b0a6b0;
+  box-shadow: -1px -1px 6px #b0a6b0;
 }
 
-h1 ,h2 ,h3 ,h4 {
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-#button {
-  background: red;
-  padding: 10px 15px;
-  text-align: center;
-  border-radius: 15px;
-  color: white;
-  font-size: 16px;
-  margin-left: 20px;
-}
-
-#button:hover, li:hover {
-  cursor: pointer;
+input:hover {
+  background: lightgray;
 }
 
 ol li {
-  padding: 7px;
-  color: #000;
+  color: #AD0034;
+  font-size: 19px;
+  margin-bottom: 8px;
+  padding: 3px;
 }
 
-ol li:nth-child(odd) {
+ol li:nth-child(even) {
   background: #CCB70A;
+}
+
+li:hover {
+  cursor: pointer;
 }

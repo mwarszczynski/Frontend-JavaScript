@@ -9,42 +9,36 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- own styles -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- fnts -->
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Sedgwick+Ave" rel="stylesheet"></head>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
 <body>
 
-  <div class="nav">
-    <p id="watch">watch</p>
-  </div>
+<section class="container">
+  <header>
+    <h1>To Do List</h1>
+  </header>
 
-  <div class="container">
-    <h2 class="cameleon-txt">Simple to do list</h2>
-    <p class="cameleon-txt">Click button to add new task, double click will remove task</p>
+  <div class="app">
+    <input id="new_task" type="text" name="new_task" placeholder="Write task . . ." />
 
-    <form name="toDoList">
-      <input type="text" name="ListItem" required>
-    </form>
+    <input id="add_task" type="submit" value="Add" title="Dodaj zadanie" />
 
-    <div id="button">Add</div>
-  </div>
+    <input id="removeAll" type="submit" value="Remove All" title="Remove tasks">
+    <a id="clear" href="#">Clear local storage!</a>
 
-  <div class="container">
-    <h4>Commisioned tasks: </h4>
-    <ol>
-        <li>Learn C++</li>
+    <ol id="todolist" contenteditable="true">
+        <li>Learn TypeScript</li>
+        <li>Learn Vue</li>
     </ol>
   </div>
 
+</section>
 
-  <div class="container">
-    <form class="fixed-form">
-      <label for="text-color-picker">Kolor tekstu: </label>
-      <input type="color" name="text-color" id="text-color-picker"><br>
-      <label for="text-color-picker">Kolor tla: </label>
-      <input type="color" name="background-color">
-    </form>
-  </div>
 
+
+
+  <!-- jquery lib -->
   <script src="js/jquery-3.2.1.min.js"></script>
   <!-- scripts jquery -->
   <script src="js/Todo.js"></script>

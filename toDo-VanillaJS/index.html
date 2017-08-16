@@ -11,27 +11,32 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <script src="https://use.fontawesome.com/377677de31.js"></script>
 </head>
 <body>
 
 <section class="container">
   <header>
-    <h1>To Do List</h1>
+    <h1>To do list</h1>
   </header>
 
   <div class="app">
-    <input id="new_task" type="text" name="new_task" placeholder="Write task . . ." />
+    <input id="new_task" type="text" name="new_task" placeholder="Write task . . ." maxlength="30"/>
 
-    <input id="add_task" type="submit" value="Add" title="Dodaj zadanie" />
+    <input id="add_task" type="submit" value="ADD TASK" title="Dodaj zadanie" />
 
-    <input id="removeAll" type="submit" value="Remove All" title="Remove tasks">
-    <a id="clear" href="#">Clear local storage!</a>
+
 
     <ol id="todolist" contenteditable="true">
-        <li>Learn TypeScript</li>
-        <li>Learn Vue</li>
+        <li>Learn TypeScript<i class="fa fa-times" aria-hidden="true"></i></li>
+        <li>Learn Vue<i class="fa fa-times" aria-hidden="true"></i></li>
     </ol>
   </div>
+
+  <input id="removeAll" type="submit" value="REMOVE ALL" title="Remove tasks"><br>
+  <a id="clear" href="#">CLEAR LOCAL STORAGE!</a>
+
+
 
 </section>
 
